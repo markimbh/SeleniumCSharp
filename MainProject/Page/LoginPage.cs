@@ -29,6 +29,20 @@
             var msg = "Email e/ou senha inválidos";
             ValidaDados("//*[@id='root']/div/div/form/div[1]/span", msg, $"mensagem de login ou senha inválidos");
         }
+        
+        public void ValidaMsgEmailObrigatorio()
+        {
+            var msgEmail = "Email é obrigatório";
+            ValidaDados("//*[@id='root']/div/div/form/div[1]/span", msgEmail, $"mensagem de e-mail obrigatório");
+        }
+
+        public void ValidaMsgSenhaObrigatoria()
+        {
+            var msgSenha = "Password é obrigatório";
+            ValidaDados("//*[@id='root']/div/div/form/div[2]/span", msgSenha, $"mensagem de senha obrigatória");
+        }
+
+
     }
 
     

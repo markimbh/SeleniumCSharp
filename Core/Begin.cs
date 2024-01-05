@@ -1,11 +1,13 @@
 global using NUnit.Framework;
 global using OpenQA.Selenium;
 global using ServeRest.Project.Core;
+global using Bogus;
 using OpenQA.Selenium.Chrome;
 using WebDriverManager.DriverConfigs.Impl;
 using WebDriverManager;
 using System.Diagnostics;
 using System.IO.Enumeration;
+
 
 
 namespace ServeRest.Project.Core
